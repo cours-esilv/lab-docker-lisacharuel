@@ -1,0 +1,4 @@
+docker exec -it dockerTD /bin/bash
+cat /etc/*release
+
+# OS used in the container : Debian GNU/Linux
