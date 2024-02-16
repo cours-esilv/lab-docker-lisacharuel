@@ -1,0 +1,10 @@
+version: '3'
+services:
+  my-service:
+    image: container
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["/entrypoint.sh"]
+    environment:
+      - WS_BACK_URL=http://localhost:8080
+    ports:
+      - "8000:8080"  # Map port 8000 on the host to port 8080 on the container
